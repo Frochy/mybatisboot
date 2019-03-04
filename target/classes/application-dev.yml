@@ -1,0 +1,17 @@
+server:
+  port: 8000
+
+
+spring:
+  datasource:
+    username: frochy
+    password: Xyj19980607
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  thymeleaf:
+    prefix: classpath:/templates/
+
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: com.frochy.entity
