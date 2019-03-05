@@ -1,6 +1,0 @@
-com\frochy\mapper\UserMapper.class
-com\frochy\controller\UserController.class
-com\frochy\service\UserService.class
-com\frochy\entity\User.class
-com\frochy\MybatisbootApplication.class
-com\frochy\util\GSonTool.class
