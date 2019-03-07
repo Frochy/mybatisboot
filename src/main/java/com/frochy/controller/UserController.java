@@ -29,8 +29,8 @@ public class UserController {
     }
     @RequestMapping("/admin")
     @ResponseBody
-    public List<User> getAll(){
-        return userService.selectAll();
+    public String getAll(){
+        return GSonTool.usersToJson(userService.selectAll());
     }
 
     @RequestMapping("/deluser")
