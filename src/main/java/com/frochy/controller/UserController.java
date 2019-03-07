@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/api")
 public class UserController {
@@ -24,6 +26,11 @@ public class UserController {
             return GSonTool.userToJson(user);
         else
             return "id="+id+"的用户不存在！";
+    }
+    @RequestMapping("/admin")
+    @ResponseBody
+    public List<User> getAll(){
+        return userService.selectAll();
     }
 
     @RequestMapping("/deluser")

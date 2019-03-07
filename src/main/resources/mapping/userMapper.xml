@@ -14,6 +14,10 @@
         select * from user where id = #{id}
     </select>
 
+    <select id="selectAll" resultType="com.frochy.entity.User">
+        select * from user
+    </select>
+
     <delete id="deleteById">
         delete from user where id=#{id}
     </delete>

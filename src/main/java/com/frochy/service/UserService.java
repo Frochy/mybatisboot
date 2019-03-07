@@ -6,6 +6,8 @@ import com.frochy.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class UserService {
 
@@ -14,6 +16,10 @@ public class UserService {
 
     public User selectById(Integer id){
         return userMapper.selectById(id);
+    }
+
+    public List<User> selectAll(){
+        return userMapper.selectAll();
     }
 
     public int deleteById(Integer id){
