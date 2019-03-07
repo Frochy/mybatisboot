@@ -14,15 +14,15 @@ public class UserService {
     @Autowired
     private UserMapper userMapper;
 
-    public User selectById(Integer id){
+    public User selectById(Integer id) {
         return userMapper.selectById(id);
     }
 
-    public List<User> selectAll(){
+    public List<User> selectAll() {
         return userMapper.selectAll();
     }
 
-    public int deleteById(Integer id){
+    public int deleteById(Integer id) {
         return userMapper.deleteById(id);
     }
 }

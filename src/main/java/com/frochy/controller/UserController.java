@@ -25,11 +25,12 @@ public class UserController {
         if (user != null)
             return GSonTool.userToJson(user);
         else
-            return "id="+id+"的用户不存在！";
+            return "id=" + id + "的用户不存在！";
     }
+
     @RequestMapping("/admin")
     @ResponseBody
-    public String getAll(){
+    public String getAll() {
         return GSonTool.usersToJson(userService.selectAll());
     }
 
