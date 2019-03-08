@@ -14,4 +14,6 @@ public interface UserMapper {
     List<User> selectAll();
 
     int deleteById(Integer id);
+
+    int addUser(User user);
 }
